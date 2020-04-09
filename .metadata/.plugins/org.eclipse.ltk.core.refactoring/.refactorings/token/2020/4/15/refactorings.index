@@ -1,0 +1,5 @@
+1586347483567	Rename package 'com.gdev.poc.security.config'
+1586347501499	Rename package 'com.gdev.poc.security.filter'
+1586347519462	Rename package 'com.gdev.poc.security.token.converter'
+1586347541048	Rename package 'com.gdev.poc.security.token.creator'
+1586347558139	Rename package 'com.gdev.poc.security.util'

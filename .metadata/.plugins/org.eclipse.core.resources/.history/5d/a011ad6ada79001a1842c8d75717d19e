@@ -1,0 +1,5 @@
+package com.gdev.poc.core.repository;
+
+public interface EstadoRepository {
+
+}

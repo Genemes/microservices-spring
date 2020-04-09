@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.gdev.poc.core.docs.BaseSwaggerConfig"/>
+    <fullyQualifiedTypeName name="com.gdev.poc.security.config.SecurityTokenConfig"/>
+    <fullyQualifiedTypeName name="ch.qos.logback.core.rolling.helper.TokenConverter"/>
+    <fullyQualifiedTypeName name="com.gdev.poc.security.filter.JwtTokenAuthorizationFilter"/>
+    <fullyQualifiedTypeName name="com.gdev.poc.security.token.creator.TokenCreator"/>
+    <fullyQualifiedTypeName name="com.gdev.poc.core.model.ApplicationUser"/>
+    <fullyQualifiedTypeName name="com.gdev.poc.core.property.JwtConfiguration"/>
+    <fullyQualifiedTypeName name="com.gdev.poc.security.token.converter.TokenConverter"/>
+</qualifiedTypeNameHistroy>
