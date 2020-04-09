@@ -24,13 +24,13 @@ volumes:
 
 
 Você pode utilizar o código acima em algum arquivo com a extensão .yml e executar com os seguintes comandos:
-# 1. Roda o docker com o comando “docker-compose -f arquivo.yml up”;
-# 2. Para pegar o id do container utilize “docker os”;
-# 3. Para acessar o mysql: “docker exec -it container_id bash”;
-# 4. “mysql -uroot –p” e em seguida digita a senha
-# 5. Para visualizar quais os bancos existentes: “show databases”; 
-# 6. Para criar outro banco: “CREATE DATABASE genesedev”;
-# 7. Definir qual o banco de dados que será usado nas consultas: “use nome_do_banco”.
+ 1. Roda o docker com o comando “docker-compose -f arquivo.yml up”;
+ 2. Para pegar o id do container utilize “docker os”;
+ 3. Para acessar o mysql: “docker exec -it container_id bash”;
+ 4. “mysql -uroot –p” e em seguida digita a senha
+ 5. Para visualizar quais os bancos existentes: “show databases”; 
+ 6. Para criar outro banco: “CREATE DATABASE genesedev”;
+ 7. Definir qual o banco de dados que será usado nas consultas: “use nome_do_banco”.
 
 OBS: Ao final de cada comando SQL sempre utilizamos “;”
 
@@ -47,6 +47,7 @@ INSERT INTO application_user (username, password, role) VALUES ('admin', '$2a$10
 
 
 Depois de iniciada teremos acesso ao endpoint para fazer login. Utilize o método POST para sua requisição passando como entrada os dados do usuário cadastrado no BD:
+
 GET login - Obtem token JWT e acesso aos outros endpoints
 http://localhost:8080/gateway/auth/login 
 entrada: 
@@ -56,6 +57,7 @@ entrada:
 }
 
 Depois de ter feito o login é gerado um token JWT no seguinte formato: Bearer eyJ...khNA, copie o todo o conteúdo do token depois do "Bearer ". Nos próximos endpoints que utilizar cole o conteudo desse token no authorizathion de cada requisição.
+
 
 ENDPOINT COURSE
 GET course – Lista todos os cursos cadastrados no banco de dados (esse endpoint necessita de autorização).
