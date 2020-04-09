@@ -48,20 +48,26 @@ INSERT INTO application_user (username, password, role) VALUES ('admin', '$2a$10
 
 Depois de iniciada teremos acesso ao endpoint para fazer login. Utilize o método POST para sua requisição passando como entrada os dados do usuário cadastrado no BD:
 
-GET login - Obtem token JWT e acesso aos outros endpoints
-http://localhost:8080/gateway/auth/login 
-entrada: 
-{
-    "username": "admin", 
-    "password": "admin"
-}
+
+ENDPOINTS LOGIN
+
+    POST login – Obtem token JWT e acesso aos outros endpoints
+    http://localhost:8080/gateway/auth/login 
+    entrada: 
+    {
+        "username": "admin", 
+        "password": "admin"
+    }
+
 
 Depois de ter feito o login é gerado um token JWT no seguinte formato: Bearer eyJ...khNA, copie o todo o conteúdo do token depois do "Bearer ". Nos próximos endpoints que utilizar cole o conteudo desse token no authorizathion de cada requisição.
 
 
 ENDPOINT COURSE
-GET course – Lista todos os cursos cadastrados no banco de dados (esse endpoint necessita de autorização).
-http://localhost:8080/gateway/course/v1/admin/course 
-saída: 
-[]
+
+
+    GET course – Lista todos os cursos cadastrados no banco de dados (esse endpoint necessita de autorização).
+    http://localhost:8080/gateway/course/v1/admin/course 
+    saída: 
+    []
 
